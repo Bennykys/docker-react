@@ -4,7 +4,7 @@ services:
 
 
 before_install:
-  - docker build -t Bennykys/docker-react -f Dockerfile.dev .
+  - docker build -t bennykys/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run Bennykys/docker-react npm run test -- --coverage
+  - docker run bennykys/docker-react npm run test -- --coverage
